@@ -71,23 +71,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const Welcome1Widget() : const SignupWidget(),
+          appStateNotifier.loggedIn ? const Welcome4Widget() : const Auth4Widget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? const Welcome1Widget() : const SignupWidget(),
-        ),
-        FFRoute(
-          name: 'signup',
-          path: '/signup',
-          builder: (context, params) => const SignupWidget(),
-        ),
-        FFRoute(
-          name: 'welcome1',
-          path: '/welcome1',
-          builder: (context, params) => const Welcome1Widget(),
+              appStateNotifier.loggedIn ? const Welcome4Widget() : const Auth4Widget(),
         ),
         FFRoute(
           name: 'logout',
@@ -105,24 +95,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const SuccessfulLoginWidget(),
         ),
         FFRoute(
-          name: 'signin',
-          path: '/signin',
-          builder: (context, params) => const SigninWidget(),
-        ),
-        FFRoute(
           name: 'accountcreated',
           path: '/accountcreated',
           builder: (context, params) => const AccountcreatedWidget(),
         ),
         FFRoute(
-          name: 'WorkerSignup',
-          path: '/workerSignup',
-          builder: (context, params) => const WorkerSignupWidget(),
-        ),
-        FFRoute(
-          name: 'createdworkeraccount',
-          path: '/createdworkeraccount',
-          builder: (context, params) => const CreatedworkeraccountWidget(),
+          name: 'workerlogin1',
+          path: '/workerlogin',
+          builder: (context, params) => const Workerlogin1Widget(),
         ),
         FFRoute(
           name: 'workercheckin',
@@ -145,9 +125,19 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const WorkersucessfulloginWidget(),
         ),
         FFRoute(
-          name: 'welcomes',
-          path: '/welcomes',
-          builder: (context, params) => const WelcomesWidget(),
+          name: 'WorkerLogin',
+          path: '/workerLogin',
+          builder: (context, params) => const WorkerLoginWidget(),
+        ),
+        FFRoute(
+          name: 'Auth4',
+          path: '/auth4',
+          builder: (context, params) => const Auth4Widget(),
+        ),
+        FFRoute(
+          name: 'welcome4',
+          path: '/welcome4',
+          builder: (context, params) => const Welcome4Widget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -316,7 +306,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
-            return '/signup';
+            return '/auth4';
           }
           return null;
         },

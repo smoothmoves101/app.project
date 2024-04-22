@@ -75,7 +75,17 @@ class _LogoutnowWidgetState extends State<LogoutnowWidget> {
                               '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}')
                           .join('&')));
 
-                  context.goNamedAuth('signup', context.mounted);
+                  context.pushNamedAuth(
+                    'Auth4',
+                    context.mounted,
+                    extra: <String, dynamic>{
+                      kTransitionInfoKey: const TransitionInfo(
+                        hasTransition: true,
+                        transitionType: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 0),
+                      ),
+                    },
+                  );
                 },
                 text: 'Log Out',
                 options: FFButtonOptions(

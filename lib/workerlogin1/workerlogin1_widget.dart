@@ -2,27 +2,25 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'createdworkeraccount_model.dart';
-export 'createdworkeraccount_model.dart';
+import 'workerlogin1_model.dart';
+export 'workerlogin1_model.dart';
 
-class CreatedworkeraccountWidget extends StatefulWidget {
-  const CreatedworkeraccountWidget({super.key});
+class Workerlogin1Widget extends StatefulWidget {
+  const Workerlogin1Widget({super.key});
 
   @override
-  State<CreatedworkeraccountWidget> createState() =>
-      _CreatedworkeraccountWidgetState();
+  State<Workerlogin1Widget> createState() => _Workerlogin1WidgetState();
 }
 
-class _CreatedworkeraccountWidgetState
-    extends State<CreatedworkeraccountWidget> {
-  late CreatedworkeraccountModel _model;
+class _Workerlogin1WidgetState extends State<Workerlogin1Widget> {
+  late Workerlogin1Model _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => CreatedworkeraccountModel());
+    _model = createModel(context, () => Workerlogin1Model());
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
@@ -56,7 +54,7 @@ class _CreatedworkeraccountWidgetState
                 size: 128.0,
               ),
               Text(
-                'Account Created!',
+                'Successful Login',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: FlutterFlowTheme.of(context).primaryText,
@@ -68,7 +66,7 @@ class _CreatedworkeraccountWidgetState
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                 child: Text(
-                  'Your worker account has been successfully created.',
+                  'You Have successfully Login',
                   style: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Readex Pro',
                         color: FlutterFlowTheme.of(context).secondaryText,

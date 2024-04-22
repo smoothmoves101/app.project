@@ -59,7 +59,7 @@ class _AccountcreatedWidgetState extends State<AccountcreatedWidget> {
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: Text(
-                  'Your account has been successfully created.',
+                  'you have successfully login',
                   style: FlutterFlowTheme.of(context).titleMedium.override(
                         fontFamily: 'Readex Pro',
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -70,7 +70,7 @@ class _AccountcreatedWidgetState extends State<AccountcreatedWidget> {
               FFButtonWidget(
                 onPressed: () async {
                   context.pushNamed(
-                    'signin',
+                    'workerdashboard',
                     extra: <String, dynamic>{
                       kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,
