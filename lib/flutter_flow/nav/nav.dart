@@ -95,16 +95,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const SuccessfulLoginWidget(),
         ),
         FFRoute(
-          name: 'accountcreated',
-          path: '/accountcreated',
-          builder: (context, params) => const AccountcreatedWidget(),
-        ),
-        FFRoute(
-          name: 'workerlogin1',
-          path: '/workerlogin',
-          builder: (context, params) => const Workerlogin1Widget(),
-        ),
-        FFRoute(
           name: 'workercheckin',
           path: '/workercheckin',
           builder: (context, params) => const WorkercheckinWidget(),

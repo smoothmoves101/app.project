@@ -493,7 +493,7 @@ class _WorkerLoginWidgetState extends State<WorkerLoginWidget>
                                                       }
 
                                                       context.pushNamedAuth(
-                                                        'workerlogin1',
+                                                        'workerdashboard',
                                                         context.mounted,
                                                         extra: <String,
                                                             dynamic>{
