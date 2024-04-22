@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'welcome1_model.dart';
 export 'welcome1_model.dart';
 
@@ -42,7 +40,7 @@ class _Welcome1WidgetState extends State<Welcome1Widget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: FlutterFlowTheme.of(context).primaryText,
         body: SafeArea(
           top: true,
           child: Container(
@@ -62,7 +60,7 @@ class _Welcome1WidgetState extends State<Welcome1Widget> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 0.0, 0.0),
                   child: Text(
                     'Welcome to Walker Janitorial and Landscaping Services login and get started work',
                     textAlign: TextAlign.center,
@@ -74,12 +72,12 @@ class _Welcome1WidgetState extends State<Welcome1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                   child: Text(
-                    'Done with a spirit of excellence',
+                    'Cleaning Done In The Spirit of Excellence',
                     textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).titleMedium.override(
-                          fontFamily: 'Readex Pro',
+                    style: FlutterFlowTheme.of(context).titleLarge.override(
+                          fontFamily: 'Outfit',
                           color: colorFromCssString(
                             'walkerjanitorialandlandscapingservices://walkerjanitorialandlandscapingservices.com${GoRouterState.of(context).uri.toString()}',
                             defaultColor:
@@ -90,7 +88,7 @@ class _Welcome1WidgetState extends State<Welcome1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () {
                       print('Button pressed ...');
@@ -100,9 +98,9 @@ class _Welcome1WidgetState extends State<Welcome1Widget> {
                       width: double.infinity,
                       height: 50.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(

@@ -1,19 +1,12 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
-import '/main.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -78,78 +71,83 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? Welcome1Widget() : SignupWidget(),
+          appStateNotifier.loggedIn ? const Welcome1Widget() : const SignupWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? Welcome1Widget() : SignupWidget(),
+              appStateNotifier.loggedIn ? const Welcome1Widget() : const SignupWidget(),
         ),
         FFRoute(
           name: 'signup',
           path: '/signup',
-          builder: (context, params) => SignupWidget(),
+          builder: (context, params) => const SignupWidget(),
         ),
         FFRoute(
           name: 'welcome1',
           path: '/welcome1',
-          builder: (context, params) => Welcome1Widget(),
+          builder: (context, params) => const Welcome1Widget(),
         ),
         FFRoute(
           name: 'logout',
           path: '/logout',
-          builder: (context, params) => LogoutWidget(),
+          builder: (context, params) => const LogoutWidget(),
         ),
         FFRoute(
           name: 'logoutnow',
           path: '/logoutnow',
-          builder: (context, params) => LogoutnowWidget(),
+          builder: (context, params) => const LogoutnowWidget(),
         ),
         FFRoute(
           name: 'successfulLogin',
           path: '/successfulLogin',
-          builder: (context, params) => SuccessfulLoginWidget(),
+          builder: (context, params) => const SuccessfulLoginWidget(),
         ),
         FFRoute(
           name: 'signin',
           path: '/signin',
-          builder: (context, params) => SigninWidget(),
+          builder: (context, params) => const SigninWidget(),
         ),
         FFRoute(
           name: 'accountcreated',
           path: '/accountcreated',
-          builder: (context, params) => AccountcreatedWidget(),
+          builder: (context, params) => const AccountcreatedWidget(),
         ),
         FFRoute(
           name: 'WorkerSignup',
           path: '/workerSignup',
-          builder: (context, params) => WorkerSignupWidget(),
+          builder: (context, params) => const WorkerSignupWidget(),
         ),
         FFRoute(
           name: 'createdworkeraccount',
           path: '/createdworkeraccount',
-          builder: (context, params) => CreatedworkeraccountWidget(),
+          builder: (context, params) => const CreatedworkeraccountWidget(),
         ),
         FFRoute(
           name: 'workercheckin',
           path: '/workercheckin',
-          builder: (context, params) => WorkercheckinWidget(),
+          builder: (context, params) => const WorkercheckinWidget(),
         ),
         FFRoute(
           name: 'workerdashboard',
           path: '/workerdashboard',
-          builder: (context, params) => WorkerdashboardWidget(),
+          builder: (context, params) => const WorkerdashboardWidget(),
         ),
         FFRoute(
           name: 'sendemail',
           path: '/sendemail',
-          builder: (context, params) => SendemailWidget(),
+          builder: (context, params) => const SendemailWidget(),
         ),
         FFRoute(
           name: 'workersucessfullogin',
           path: '/workersucessfullogin',
-          builder: (context, params) => WorkersucessfulloginWidget(),
+          builder: (context, params) => const WorkersucessfulloginWidget(),
+        ),
+        FFRoute(
+          name: 'welcomes',
+          path: '/welcomes',
+          builder: (context, params) => const WelcomesWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -381,7 +379,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

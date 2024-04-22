@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'workerdashboard_model.dart';
 export 'workerdashboard_model.dart';
 
@@ -54,7 +52,7 @@ class _WorkerdashboardWidgetState extends State<WorkerdashboardWidget> {
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -66,7 +64,7 @@ class _WorkerdashboardWidgetState extends State<WorkerdashboardWidget> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 24.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 24.0),
                   child: Text(
                     'Welcome to the Dashboard',
                     style: FlutterFlowTheme.of(context).headlineLarge.override(
@@ -77,7 +75,7 @@ class _WorkerdashboardWidgetState extends State<WorkerdashboardWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 24.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 24.0),
                   child: Text(
                     'Worker\'s Portal',
                     style: FlutterFlowTheme.of(context).titleMedium.override(
@@ -89,7 +87,7 @@ class _WorkerdashboardWidgetState extends State<WorkerdashboardWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 24.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 24.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -99,7 +97,7 @@ class _WorkerdashboardWidgetState extends State<WorkerdashboardWidget> {
                           context.pushNamed(
                             'workercheckin',
                             extra: <String, dynamic>{
-                              kTransitionInfoKey: TransitionInfo(
+                              kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
                                 transitionType: PageTransitionType.fade,
                                 duration: Duration(milliseconds: 0),
@@ -111,9 +109,9 @@ class _WorkerdashboardWidgetState extends State<WorkerdashboardWidget> {
                         options: FFButtonOptions(
                           width: 150.0,
                           height: 50.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).primary,
                           textStyle:
@@ -134,9 +132,9 @@ class _WorkerdashboardWidgetState extends State<WorkerdashboardWidget> {
                         options: FFButtonOptions(
                           width: 150.0,
                           height: 50.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).primary,
                           textStyle:
@@ -157,7 +155,7 @@ class _WorkerdashboardWidgetState extends State<WorkerdashboardWidget> {
                     context.pushNamed(
                       'logoutnow',
                       extra: <String, dynamic>{
-                        kTransitionInfoKey: TransitionInfo(
+                        kTransitionInfoKey: const TransitionInfo(
                           hasTransition: true,
                           transitionType: PageTransitionType.fade,
                           duration: Duration(milliseconds: 0),
@@ -169,9 +167,9 @@ class _WorkerdashboardWidgetState extends State<WorkerdashboardWidget> {
                   options: FFButtonOptions(
                     width: 150.0,
                     height: 50.0,
-                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).tertiary,
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                           fontFamily: 'Readex Pro',

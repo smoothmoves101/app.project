@@ -16,3 +16,4 @@ export '/workerdashboard/workerdashboard_widget.dart'
 export '/sendemail/sendemail_widget.dart' show SendemailWidget;
 export '/workersucessfullogin/workersucessfullogin_widget.dart'
     show WorkersucessfulloginWidget;
+export '/welcomes/welcomes_widget.dart' show WelcomesWidget;

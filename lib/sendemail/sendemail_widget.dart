@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'sendemail_model.dart';
 export 'sendemail_model.dart';
 
@@ -78,14 +76,14 @@ class _SendemailWidgetState extends State<SendemailWidget> {
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -118,28 +116,28 @@ class _SendemailWidgetState extends State<SendemailWidget> {
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0x00000000),
                         width: 2.0,
                       ),
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     errorBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0x00000000),
                         width: 2.0,
                       ),
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     focusedErrorBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0x00000000),
                         width: 2.0,
                       ),
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     contentPadding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 32.0, 20.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(20.0, 32.0, 20.0, 12.0),
                   ),
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Readex Pro',
@@ -149,7 +147,7 @@ class _SendemailWidgetState extends State<SendemailWidget> {
                       _model.textController1Validator.asValidator(context),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                   child: TextFormField(
                     controller: _model.textController2,
                     focusNode: _model.textFieldFocusNode2,
@@ -171,27 +169,27 @@ class _SendemailWidgetState extends State<SendemailWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       errorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedErrorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
-                      contentPadding: EdgeInsetsDirectional.fromSTEB(
+                      contentPadding: const EdgeInsetsDirectional.fromSTEB(
                           20.0, 32.0, 20.0, 12.0),
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -204,7 +202,7 @@ class _SendemailWidgetState extends State<SendemailWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                   child: TextFormField(
                     controller: _model.textController3,
                     focusNode: _model.textFieldFocusNode3,
@@ -226,27 +224,27 @@ class _SendemailWidgetState extends State<SendemailWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       errorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedErrorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
-                      contentPadding: EdgeInsetsDirectional.fromSTEB(
+                      contentPadding: const EdgeInsetsDirectional.fromSTEB(
                           20.0, 32.0, 20.0, 12.0),
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -258,7 +256,7 @@ class _SendemailWidgetState extends State<SendemailWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                   child: TextFormField(
                     controller: _model.textController4,
                     focusNode: _model.textFieldFocusNode4,
@@ -280,27 +278,27 @@ class _SendemailWidgetState extends State<SendemailWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       errorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedErrorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
-                      contentPadding: EdgeInsetsDirectional.fromSTEB(
+                      contentPadding: const EdgeInsetsDirectional.fromSTEB(
                           20.0, 32.0, 20.0, 12.0),
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -313,7 +311,7 @@ class _SendemailWidgetState extends State<SendemailWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () {
                       print('Button pressed ...');
@@ -323,9 +321,9 @@ class _SendemailWidgetState extends State<SendemailWidget> {
                       width: double.infinity,
                       height: 55.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleMedium.override(

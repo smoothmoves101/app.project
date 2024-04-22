@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'workerdashboard_widget.dart' show WorkerdashboardWidget;
+import 'welcomes_widget.dart' show WelcomesWidget;
 import 'package:flutter/material.dart';
 
-class WorkerdashboardModel extends FlutterFlowModel<WorkerdashboardWidget> {
+class WelcomesModel extends FlutterFlowModel<WelcomesWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

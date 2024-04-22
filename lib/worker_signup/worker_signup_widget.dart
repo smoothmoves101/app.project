@@ -5,10 +5,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'worker_signup_model.dart';
 export 'worker_signup_model.dart';
 
@@ -61,15 +58,15 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 60.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 60.0),
+            end: const Offset(0.0, 0.0),
           ),
           TiltEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: Offset(-0.349, 0),
-            end: Offset(0, 0),
+            begin: const Offset(-0.349, 0),
+            end: const Offset(0, 0),
           ),
         ],
       ),
@@ -107,40 +104,40 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
-                  alignment: AlignmentDirectional(0.0, -1.0),
+                  alignment: const AlignmentDirectional(0.0, -1.0),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 44.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 602.0,
                             ),
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
-                              borderRadius: BorderRadius.only(
+                              borderRadius: const BorderRadius.only(
                                 bottomLeft: Radius.circular(16.0),
                                 bottomRight: Radius.circular(16.0),
                                 topLeft: Radius.circular(0.0),
                                 topRight: Radius.circular(0.0),
                               ),
                             ),
-                            alignment: AlignmentDirectional(-1.0, 0.0),
+                            alignment: const AlignmentDirectional(-1.0, 0.0),
                             child: Align(
-                              alignment: AlignmentDirectional(-1.0, 0.0),
+                              alignment: const AlignmentDirectional(-1.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       'WalkerJAndLServices Worker',
@@ -160,7 +157,7 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                         Container(
                           width: double.infinity,
                           height: 700.0,
-                          constraints: BoxConstraints(
+                          constraints: const BoxConstraints(
                             maxWidth: 602.0,
                           ),
                           decoration: BoxDecoration(
@@ -168,12 +165,12 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                 .secondaryBackground,
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Column(
                               children: [
                                 Align(
-                                  alignment: Alignment(-1.0, 0),
+                                  alignment: const Alignment(-1.0, 0),
                                   child: TabBar(
                                     isScrollable: true,
                                     labelColor: FlutterFlowTheme.of(context)
@@ -181,7 +178,7 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                     unselectedLabelColor:
                                         FlutterFlowTheme.of(context)
                                             .secondaryText,
-                                    labelPadding: EdgeInsets.all(16.0),
+                                    labelPadding: const EdgeInsets.all(16.0),
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .displaySmall
                                         .override(
@@ -199,9 +196,9 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                     indicatorColor:
                                         FlutterFlowTheme.of(context).primary,
                                     indicatorWeight: 4.0,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 16.0, 12.0),
-                                    tabs: [
+                                    tabs: const [
                                       Tab(
                                         text: 'Sign Up',
                                       ),
@@ -218,10 +215,10 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   12.0, 0.0, 12.0, 12.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -229,7 +226,7 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 12.0, 0.0, 24.0),
                                                 child: Text(
@@ -245,10 +242,10 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
-                                                child: Container(
+                                                child: SizedBox(
                                                   width: double.infinity,
                                                   child: TextFormField(
                                                     controller: _model
@@ -256,7 +253,7 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                                     focusNode: _model
                                                         .emailAddressCreateFocusNode,
                                                     autofocus: true,
-                                                    autofillHints: [
+                                                    autofillHints: const [
                                                       AutofillHints.email
                                                     ],
                                                     obscureText: false,
@@ -325,7 +322,7 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                                               .of(context)
                                                           .secondaryBackground,
                                                       contentPadding:
-                                                          EdgeInsets.all(24.0),
+                                                          const EdgeInsets.all(24.0),
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -348,10 +345,10 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
-                                                child: Container(
+                                                child: SizedBox(
                                                   width: double.infinity,
                                                   child: TextFormField(
                                                     controller: _model
@@ -359,7 +356,7 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                                     focusNode: _model
                                                         .passwordCreateFocusNode,
                                                     autofocus: false,
-                                                    autofillHints: [
+                                                    autofillHints: const [
                                                       AutofillHints.password
                                                     ],
                                                     obscureText: !_model
@@ -429,7 +426,7 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                                               .of(context)
                                                           .secondaryBackground,
                                                       contentPadding:
-                                                          EdgeInsets.all(24.0),
+                                                          const EdgeInsets.all(24.0),
                                                       suffixIcon: InkWell(
                                                         onTap: () => setState(
                                                           () => _model
@@ -472,10 +469,10 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
-                                                child: Container(
+                                                child: SizedBox(
                                                   width: double.infinity,
                                                   child: TextFormField(
                                                     controller: _model
@@ -483,7 +480,7 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                                     focusNode: _model
                                                         .passwordConfirmFocusNode,
                                                     autofocus: false,
-                                                    autofillHints: [
+                                                    autofillHints: const [
                                                       AutofillHints.password
                                                     ],
                                                     obscureText: !_model
@@ -554,7 +551,7 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                                               .of(context)
                                                           .secondaryBackground,
                                                       contentPadding:
-                                                          EdgeInsets.all(24.0),
+                                                          const EdgeInsets.all(24.0),
                                                       suffixIcon: InkWell(
                                                         onTap: () => setState(
                                                           () => _model
@@ -598,10 +595,10 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 16.0),
                                                   child: FFButtonWidget(
@@ -612,7 +609,7 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                                         extra: <String,
                                                             dynamic>{
                                                           kTransitionInfoKey:
-                                                              TransitionInfo(
+                                                              const TransitionInfo(
                                                             hasTransition: true,
                                                             transitionType:
                                                                 PageTransitionType
@@ -635,7 +632,7 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                                         ScaffoldMessenger.of(
                                                                 context)
                                                             .showSnackBar(
-                                                          SnackBar(
+                                                          const SnackBar(
                                                             content: Text(
                                                               'Passwords don\'t match!',
                                                             ),
@@ -663,14 +660,14 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                                       width: 230.0,
                                                       height: 52.0,
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
                                                                   0.0,
                                                                   0.0),
                                                       iconPadding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
@@ -693,7 +690,7 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                                                     0.0,
                                                               ),
                                                       elevation: 3.0,
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Colors.transparent,
                                                         width: 1.0,
@@ -705,7 +702,7 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                                                   ),
                                                 ),
                                               ),
-                                              Column(
+                                              const Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
                                                   Align(
@@ -772,7 +769,7 @@ class _WorkerSignupWidgetState extends State<WorkerSignupWidget>
                     height: double.infinity,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
-                      image: DecorationImage(
+                      image: const DecorationImage(
                         fit: BoxFit.cover,
                         image: CachedNetworkImageProvider(
                           'https://images.unsplash.com/photo-1508385082359-f38ae991e8f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80',
