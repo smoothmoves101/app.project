@@ -566,28 +566,7 @@ class _WorkerLoginWidgetState extends State<WorkerLoginWidget>
                                                           0.0, 0.0, 0.0, 16.0),
                                                   child: FFButtonWidget(
                                                     onPressed: () async {
-                                                      if (_model
-                                                          .emailAddressTextController
-                                                          .text
-                                                          .isEmpty) {
-                                                        ScaffoldMessenger.of(
-                                                                context)
-                                                            .showSnackBar(
-                                                          const SnackBar(
-                                                            content: Text(
-                                                              'Email required!',
-                                                            ),
-                                                          ),
-                                                        );
-                                                        return;
-                                                      }
-                                                      await authManager
-                                                          .resetPassword(
-                                                        email: _model
-                                                            .emailAddressTextController
-                                                            .text,
-                                                        context: context,
-                                                      );
+                                                      context.pushNamed('pass');
                                                     },
                                                     text: 'Forgot Password',
                                                     options: FFButtonOptions(

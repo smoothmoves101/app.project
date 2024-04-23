@@ -128,6 +128,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'welcome4',
           path: '/welcome4',
           builder: (context, params) => const Welcome4Widget(),
+        ),
+        FFRoute(
+          name: 'pass',
+          path: '/pass',
+          builder: (context, params) => const PassWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

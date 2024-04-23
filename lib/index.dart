@@ -12,3 +12,4 @@ export '/workersucessfullogin/workersucessfullogin_widget.dart'
 export '/worker_login/worker_login_widget.dart' show WorkerLoginWidget;
 export '/auth4/auth4_widget.dart' show Auth4Widget;
 export '/welcome4/welcome4_widget.dart' show Welcome4Widget;
+export '/pass/pass_widget.dart' show PassWidget;
