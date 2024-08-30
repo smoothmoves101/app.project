@@ -11,7 +11,5 @@ class WorkerdashboardModel extends FlutterFlowModel<WorkerdashboardWidget> {
   void initState(BuildContext context) {}
 
   @override
-  void dispose() {
-    unfocusNode.dispose();
-  }
+  void dispose() {}
 }

@@ -28,7 +28,6 @@ class WorkerLoginModel extends FlutterFlowModel<WorkerLoginWidget> {
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     tabBarController?.dispose();
     emailAddressFocusNode?.dispose();
     emailAddressTextController?.dispose();

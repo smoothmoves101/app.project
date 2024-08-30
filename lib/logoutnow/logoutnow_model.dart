@@ -11,7 +11,5 @@ class LogoutnowModel extends FlutterFlowModel<LogoutnowWidget> {
   void initState(BuildContext context) {}
 
   @override
-  void dispose() {
-    unfocusNode.dispose();
-  }
+  void dispose() {}
 }

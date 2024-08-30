@@ -16,7 +16,6 @@ class WorkercheckinModel extends FlutterFlowModel<WorkercheckinWidget> {
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     textFieldFocusNode?.dispose();
     textController?.dispose();
   }

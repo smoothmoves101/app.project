@@ -47,7 +47,6 @@ class Auth4Model extends FlutterFlowModel<Auth4Widget> {
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     tabBarController?.dispose();
     emailAddressFocusNode?.dispose();
     emailAddressTextController?.dispose();

@@ -11,7 +11,5 @@ class Welcome4Model extends FlutterFlowModel<Welcome4Widget> {
   void initState(BuildContext context) {}
 
   @override
-  void dispose() {
-    unfocusNode.dispose();
-  }
+  void dispose() {}
 }

@@ -11,7 +11,5 @@ class SuccessfulLoginModel extends FlutterFlowModel<SuccessfulLoginWidget> {
   void initState(BuildContext context) {}
 
   @override
-  void dispose() {
-    unfocusNode.dispose();
-  }
+  void dispose() {}
 }
