@@ -5,13 +5,13 @@ Future initFirebase() async {
   if (kIsWeb) {
     await Firebase.initializeApp(
         options: const FirebaseOptions(
-            apiKey: "AIzaSyAUxlJ0iAC_GAyJzWPNc3cDFwcbYIlw51c",
-            authDomain: "walker-booking-service.firebaseapp.com",
-            projectId: "walker-booking-service",
-            storageBucket: "walker-booking-service.appspot.com",
-            messagingSenderId: "692765118462",
-            appId: "1:692765118462:web:08554924d74365431bfaaf",
-            measurementId: "G-PDY9H209Y6"));
+            apiKey: "AIzaSyBSGMBEwjgk9zcI78UKZgmOyBTDaQ65C8s",
+            authDomain: "walker-enterprise-worker.firebaseapp.com",
+            projectId: "walker-enterprise-worker",
+            storageBucket: "walker-enterprise-worker.appspot.com",
+            messagingSenderId: "363243454478",
+            appId: "1:363243454478:web:86a6f5de9ff24916e03c5f",
+            measurementId: "G-DXZ8TLY86Q"));
   } else {
     await Firebase.initializeApp();
   }

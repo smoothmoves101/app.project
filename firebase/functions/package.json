@@ -18,10 +18,10 @@
   },
   "scripts": {
     "lint": "./node_modules/.bin/eslint --max-warnings=0 .",
-    "serve": "firebase -P walker-booking-service emulators:start --only functions",
-    "shell": "firebase -P walker-booking-service functions:shell",
+    "serve": "firebase -P walker-enterprise-worker emulators:start --only functions",
+    "shell": "firebase -P walker-enterprise-worker functions:shell",
     "start": "npm run shell",
-    "logs": "firebase -P walker-booking-service functions:log",
+    "logs": "firebase -P walker-enterprise-worker functions:log",
     "compile": "cp ../../tsconfig.template.json ./tsconfig-compile.json && tsc --project tsconfig-compile.json"
   },
   "engines": {
